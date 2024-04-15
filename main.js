@@ -1,9 +1,5 @@
 import { Task, TaskStatus, TaskCollection } from "./modules/task-objects.js"
 
-// TO DO :
-// as an indecisive user I want to be able to delete items so I can keep my list lean
-// as a perfectionist I want to be able to untick an item I previously marked as completed so I can work on improving them
-
 const taskCollection = new TaskCollection()
 let newTask = new Task("Buy milk", TaskStatus.Pending)
 taskCollection.addTask(newTask)
@@ -14,9 +10,6 @@ taskCollection.addTask(newTask)
 newTask = new Task("Learn React", TaskStatus.Pending)
 taskCollection.addTask(newTask)
 taskCollection.getAllTasksFromStorage()
-// taskCollection.allTasks.forEach((task) => {
-//     console.log(`Description: ${task.description}, Status: ${task.getStatusText()}`);
-// });
 
 const canvas = document.querySelector("#canvas")
 const infoButton = document.querySelector(".nav-bar")
